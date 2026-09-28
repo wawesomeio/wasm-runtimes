@@ -17,5 +17,8 @@ Wasmtime 47 forever.
 These are public because the consumer has no credentials — the gateway
 image is built on a host with no GitHub PAT, and a release asset on a
 private repository is an API call carrying a bearer token rather than a
-URL. What is published is an unmodified upstream artifact from
-`bytecodealliance/StarlingMonkey` and ahead-of-time compilations of it.
+URL. What is published is `bytecodealliance/StarlingMonkey`, built from an
+upstream tag, and ahead-of-time compilations of it. A version like
+`0.3.0-wawesome.1` is upstream 0.3.0 with small patches of our own. The
+release carries those patches, and each one goes away at the first upstream
+release that has the fix.
